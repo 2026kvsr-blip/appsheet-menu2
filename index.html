@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+body{
+margin:20px;
+font-family:Arial;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.item{
+text-decoration:none;
+text-align:center;
+color:black;
+}
+
+.item img{
+width:60px;
+height:60px;
+display:block;
+margin:auto;
+}
+
+.label{
+margin-top:8px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a class="item" href="#">
+<img src="expenses.png">
+<div class="label">Expenses</div>
+</a>
+
+<a class="item" href="#">
+<img src="activities.png">
+<div class="label">Activities</div>
+</a>
+
+<a class="item" href="#">
+<img src="health.png">
+<div class="label">Health</div>
+</a>
+
+<a class="item" href="#">
+<img src="loans.png">
+<div class="label">Loans</div>
+</a>
+
+<a class="item" href="#">
+<img src="memories.png">
+<div class="label">Memories</div>
+</a>
+
+<a class="item" href="#">
+<img src="about.png">
+<div class="label">About</div>
+</a>
+
+</div>
+
+</body>
+</html>
