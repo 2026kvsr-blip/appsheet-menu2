@@ -1,159 +1,173 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<base target="_self">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-  
-<style>
+  <base target="_self">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-body{
-  font-family:Arial,sans-serif;
-  background:#eef3f8;
-  margin:0;
-  padding:5px;
-  box-sizing:border-box;
-}
+  <style>
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:35px 10px;   /* row gap, column gap */
-  width:100%;
-  max-width:430px;
-  margin:auto;
-  background:#f0f7ff;   /* container color */
-  border-radius:30px;
-  padding:30px 15px;
-  box-sizing:border-box;
-  box-shadow:0 4px 20px rgba(0,0,0,0.08);
-}
+    *{
+      box-sizing:border-box;
+    }
 
-.item{
-  text-decoration:none;
-  color:#222;
-  text-align:center;
-}
+    body{
+      font-family:Arial,sans-serif;
+      background:#eef3f8;
+      margin:0;
+      padding:10px;
+    }
 
-.icon-circle{
-  width:90px;
-  height:90px;
-  margin:auto;
-  background:#dce7ff;
-  border:1px solid #c4d4ff;
-  border-radius:50%;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:35px 15px;
+      width:100%;
+      max-width:430px;
+      margin:auto;
+      background:#f0f7ff;
+      border-radius:30px;
+      padding:30px 15px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    }
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
+    .item{
+      text-decoration:none;
+      color:#222;
+      text-align:center;
+    }
 
-.icon-circle img{
-  width:55px;
-  height:55px;
-  object-fit:contain;
-}
-.item span{
-  display:block;
-  margin-top:12px;
-  font-size:16px;
-  font-weight:500;
-}</style>
+    .icon-circle{
+      width:90px;
+      height:90px;
+      margin:auto;
+      background:#dce7ff;
+      border:1px solid #c4d4ff;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
 
+    .icon-circle img{
+      width:55px;
+      height:55px;
+      object-fit:contain;
+      display:block;
+    }
+
+    .item span{
+      display:block;
+      margin-top:10px;
+      font-size:14px;
+      font-weight:500;
+      color:#333;
+    }
+
+  </style>
 </head>
 
 <body>
 
 <div class="grid">
-  <a class="item" href="...">
-  <div class="icon-circle">
-    <img src="Expenses.png">
-  </div>
-  <span>Expenses</span>
-</a>
-<a class="item"
-   href="#"
-onclick="window.open('https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Expense','_top'); return false;">
-  <img src="Expenses.png">
-  <span>Expenses</span>
-</a>
-  <a class="item"
-     target="_blank"
-href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Activity">
-  <img src="Activities.png">
-  <span>Activities</span>
-</a>
 
-<a class="item"
-     target="_blank"
-href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Medicine">
-  <img src="Health.png">
-  <span>Health</span>
-</a>
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Expense">
+    <div class="icon-circle">
+      <img src="Expenses.png">
+    </div>
+    <span>Expenses</span>
+  </a>
 
-<a class="item"
-     target="_blank"
-href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Loans">
-  <img src="Loans.png">
-  <span>Loans</span>
-</a>
-<a class="item"
-     target="_blank"
-   href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20Payment">
-  <img src="Payments.png">
-  <span>Payments</span>
-</a>
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Activity">
+    <div class="icon-circle">
+      <img src="Activities.png">
+    </div>
+    <span>Activities</span>
+  </a>
 
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Medicine">
+    <div class="icon-circle">
+      <img src="Health.png">
+    </div>
+    <span>Health</span>
+  </a>
 
-<a class="item"
-     target="_blank"
-  href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Income">
-  <img src="Income.png">
-  <span>Income</span>
-</a>
-  <a class="item"
-     target="_blank"
-   href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Family">
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Loans">
+    <div class="icon-circle">
+      <img src="Loans.png">
+    </div>
+    <span>Loans</span>
+  </a>
 
-  <img src="FamilyTree.png">
-  <span>FamilyTree</span>
-</a>
-  <a class="item"
-     target="_blank"
-  href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Incident">
-  <img src="Memories.png">
-  <span>Memories</span>
-</a>
-<a class="item"
-     target="_blank"
-   href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Reports">
-  <img src="Reports....png">
-  <span>Reports</span>
-</a>
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20Payment">
+    <div class="icon-circle">
+      <img src="Payments.png">
+    </div>
+    <span>Payments</span>
+  </a>
 
-  <a class="item"
-     target="_blank"
-href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Gallery">
-  <img src="Gallery.png">
-  <span>Gallery</span>
-</a>
-<a class="item"
-     target="_blank"
-href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Home">
-  <img src="About.png">
-  <span>About</span>
-</a>
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Income">
+    <div class="icon-circle">
+      <img src="Income.png">
+    </div>
+    <span>Income</span>
+  </a>
 
-  <a class="item"
-     target="_blank"
-href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Help">
-  <img src="Reports.png">
-  <span>Help</span>
-</a>
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Family">
+    <div class="icon-circle">
+      <img src="FamilyTree.png">
+    </div>
+    <span>Family</span>
+  </a>
 
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Incident">
+    <div class="icon-circle">
+      <img src="Memories.png">
+    </div>
+    <span>Memories</span>
+  </a>
+
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Reports">
+    <div class="icon-circle">
+      <img src="Reports....png">
+    </div>
+    <span>Reports</span>
+  </a>
+
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Gallery">
+    <div class="icon-circle">
+      <img src="Gallery.png">
+    </div>
+    <span>Gallery</span>
+  </a>
+
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Home">
+    <div class="icon-circle">
+      <img src="About.png">
+    </div>
+    <span>About</span>
+  </a>
+
+  <a class="item" target="_blank"
+     href="https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Help">
+    <div class="icon-circle">
+      <img src="Reports.png">
+    </div>
+    <span>Help</span>
+  </a>
 
 </div>
 
