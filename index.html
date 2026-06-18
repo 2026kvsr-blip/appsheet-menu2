@@ -38,17 +38,24 @@ body{
   text-align:center;
 }
 
-.item img{
-  width:75px;              /* icon size taggincham */
-  height:75px;
-  background:#dce7ff;      /* circle color */
-  border:0.1px solid #c4d4ff; /* thin border */
+.icon-circle{
+  width:90px;
+  height:90px;
+  margin:auto;
+  background:#dce7ff;
+  border:1px solid #c4d4ff;
   border-radius:50%;
-  padding:12px;        /* circle border and image gap */
-  object-fit:contain;
-  box-sizing:border-box;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
+.icon-circle img{
+  width:55px;
+  height:55px;
+  object-fit:contain;
+}
 .item span{
   display:block;
   margin-top:12px;
@@ -61,7 +68,12 @@ body{
 <body>
 
 <div class="grid">
-
+  <a class="item" href="...">
+  <div class="icon-circle">
+    <img src="Expenses.png">
+  </div>
+  <span>Expenses</span>
+</a>
 <a class="item"
    href="#"
 onclick="window.open('https://www.appsheet.com/start/1d5117ed-1218-45c8-b5a3-6fa4128e1491#view=Add%20New%20Expense','_top'); return false;">
