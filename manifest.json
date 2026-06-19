@@ -1,9 +1,9 @@
 {
-  "name": "Loan Table",
-  "short_name": "LoanTable",
+  "name": "FaMiLe",
+  "short_name": "FaMiLe",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#eef3f8",
+  "background_color": "#dce7ff",
   "theme_color": "#dce7ff",
   "icons": [
     {
