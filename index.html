@@ -22,11 +22,12 @@
     }
 
     body{
-      font-family:Arial,sans-serif;
-      background:#eef3f8;
-      margin:0;
-      padding:10px;
-    }
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#eef3f8;
+  padding-top:70px;
+  padding-bottom:90px;
+}
 
     .grid{
       display:grid;
@@ -73,17 +74,37 @@
       font-weight:500;
       color:#333;
     }
-    body{
-  margin:0;
-  padding:0;
-  font-family:Arial,sans-serif;
-  background:#eef3f8;
-}
+    
 .container{
   padding:15px;
   padding-bottom:90px; /* Bottom bar కి space */
 }
+.top-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:60px;
+  background:#8fb0ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  z-index:1000;
+}
 
+.menu-icon{
+  position:absolute;
+  left:20px;
+  font-size:30px;
+  color:#000;
+}
+
+.page-title{
+  font-size:22px;
+  font-weight:600;
+  color:#000;
+}
 /* Fixed Bottom Navigation */
 .bottom-nav{
   position:fixed;
@@ -121,7 +142,10 @@
 </head>
 
 <body>
-
+<div class="top-bar">
+  <div class="menu-icon">☰</div>
+  <div class="page-title">Home</div>
+</div>
 <div class="grid">
 
   <a class="item" target="_blank"
@@ -218,7 +242,7 @@
     </div>
     <span>About</span>
   </a>
-
+</div>
 <div class="bottom-nav">
 
   <a 
