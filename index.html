@@ -197,8 +197,7 @@
   <div class="page-title">Home</div>
 </div>
     <div class="side-menu" id="sideMenu">
-  <a href="#" onclick="logout()">Logout</a>
-</div>
+<a href="#" onclick="exitApp()">Exit</a></div>
 
 <div class="overlay"
      id="overlay"
@@ -357,12 +356,10 @@ function closeMenu(){
     .classList.remove("show");
 }
 
-function logout(){
+function exitApp(){
   closeMenu();
-  window.location.href =
-    "https://www.appsheet.com/logout";
+  alert("To exit FaMiLe, swipe up from the bottom and close the app.");
 }
-
 </script>
 
 </body>
