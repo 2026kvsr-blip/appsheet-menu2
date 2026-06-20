@@ -15,7 +15,7 @@
   <meta http-equiv="Expires" content="0">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <style>
+     <style>
 
     *{
       box-sizing:border-box;
@@ -186,10 +186,30 @@
 .overlay.show{
   display:block;
 }
+      .top-popup{
+  position:fixed;
+  top:-80px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#333;
+  color:#fff;
+  padding:12px 20px;
+  border-radius:12px;
+  font-size:15px;
+  z-index:5000;
+  transition:top 0.4s ease;
+}
+
+.top-popup.show{
+  top:80px;
+}
   </style>
 </head>
 
 <body>
+ <div id="topPopup" class="top-popup">
+  Swipe up and close the FaMiLe app.
+</div>
 <div class="top-bar">
   <div class="menu-icon">☰</div>
   <div class="page-title">Home</div>
@@ -348,6 +368,17 @@ function closeMenu() {
   document.getElementById("sideMenu").classList.remove("open");
   document.getElementById("overlay").classList.remove("show");
 }
+ function exitApp(){
+  closeMenu();
+
+  const popup = document.getElementById("topPopup");
+  popup.classList.add("show");
+
+  setTimeout(function(){
+    popup.classList.remove("show");
+  }, 2000);
+}
+
 </script>
 </body>
 </body>
