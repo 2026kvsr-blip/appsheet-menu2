@@ -95,13 +95,20 @@
   
 .menu-icon{
   position:absolute;
-  left:20px;
+  left:max(0px, env(safe-area-inset-left));                 /* Almost full left */
+  top:50%;
+  transform:translateY(-50%);
+  background:#8fb0ff;       /* Same as menu color */
+  border:none;
+  padding:0;                /* Remove inside padding */
+  margin:0;
   font-size:30px;
   color:#000;
-   z-index:3001;
-
+  line-height:1;
+  cursor:pointer;
+  z-index:3001;
+  -webkit-tap-highlight-color:transparent;
 }
-
 .page-title{
   font-size:22px;
   font-weight:600;
@@ -216,8 +223,10 @@
 </div>
  <div class="top-bar">
 <div class="top-bar">
-  <button class="menu-icon" onclick="openMenu()">☰</button>
-  <div class="page-title">Home</div>
+<button class="menu-icon"
+        ontouchstart="openMenu()"
+        onclick="openMenu()">☰</button>  
+ <div class="page-title">Home</div>
 </div>  <div class="page-title">Home</div>
 </div>
     <div class="side-menu" id="sideMenu">
